@@ -1,0 +1,10 @@
+---
+    - name: create_user
+      hosts: docker
+      user: root
+      gather_facts: false
+      vars:
+        - user: "heidsoft"
+      tasks:
+        - name: create user
+          user: name="{{ user }}"

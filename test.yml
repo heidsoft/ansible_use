@@ -1,0 +1,7 @@
+---                         #严格注意格式， - 和 : 后都要有空格分隔
+- hosts: docker             #主机或主机群组
+  remote_user: root        #客户端执行命令的用户
+  tasks:
+   - name: test_playbook     #任务的名字
+     shell: touch  /opt/test.txt    #具体执行的任务
+
